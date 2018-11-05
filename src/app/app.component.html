@@ -1,0 +1,14 @@
+<div style="text-align:center">
+    <h1 style="font-weight : bold"> Posts </h1>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <app-post-list-component *ngFor="let post of listePosts"
+                                [title]="post.title"
+                                [content]="post.desc">
+                              </app-post-list-component>
+  </div>
+
+</div>
